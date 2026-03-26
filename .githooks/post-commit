@@ -1,0 +1,5 @@
+#!/bin/bash
+# post-commit hook: Genera Superbundle automáticamente
+
+# Ejecutar script de superbundle silenciosamente
+bash scripts/handoff_superbundle.sh 2>/dev/null || true

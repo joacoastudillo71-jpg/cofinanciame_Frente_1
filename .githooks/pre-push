@@ -1,0 +1,21 @@
+#!/bin/bash
+# pre-push hook: Bloquea push directo a main
+
+current_branch=$(git symbolic-ref HEAD | sed -e 's,.*/\(.*\),\1,')
+
+if [ "$current_branch" = "main" ]; then
+    echo ""
+    echo "🔴 =========================================="
+    echo "🔴 PUSH A main BLOQUEADO"
+    echo "🔴 =========================================="
+    echo ""
+    echo "Usa el flujo correcto:"
+    echo "  1. git checkout -b feat/mi-feature"
+    echo "  2. git push origin feat/mi-feature"
+    echo "  3. Crear PR en GitHub"
+    echo "  4. CI verde → Merge"
+    echo ""
+    exit 1
+fi
+
+exit 0
