@@ -10,8 +10,8 @@
 
 ```bash
 # Clonar repo
-git clone https://github.com/djcuencadreams/Cofinanciame-v2.0.git
-cd Cofinanciame-v2.0
+git clone https://github.com/joacoastudillo71-jpg/cofinanciame_Frente_1.git
+cd cofinanciame_Frente_1
 
 # Instalar dependencias
 npm install
@@ -32,7 +32,7 @@ npm run dev
 | Script | Comando | Propósito |
 |:---|:---|:---|
 | Dev | `npm run dev` | Servidor de desarrollo |
-| Build | `npm run build` | Build de producción |
+| Build | `npm build` | Build completo para Vercel (Frontend + Server) |
 | Check | `npm run check` | Type-check TypeScript |
 | Handoff | `npm run handoff` | Generar Superbundle |
 

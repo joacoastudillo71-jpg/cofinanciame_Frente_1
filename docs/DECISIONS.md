@@ -291,3 +291,21 @@ Producción:  /assets/aviano/logo.png → https://assets.cofinancia.me/cofinanci
 
 
 
+
+---
+
+### ADR-017: [2026-03-26] — Vercel/Vite Deployment Config & Git Cleanup
+
+**Context**: Need to prepare the project for deployment on a personal Vercel account and a new GitHub repository, ensuring clean history and correct routing.
+
+**Decision**: 
+1. **Vercel Rewrites**: Configured `vercel.json` with rewrites for `/api` (to backend) and general routes (to `dist/public`).
+2. **Build Optimization**: Updated `package.json` build script to ensure both frontend and backend are bundled correctly: `vite build && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist`.
+3. **Absolute Path Logic**: Updated Express `serveStatic` to use `process.cwd()` for absolute path resolution in Vercel's ephemeral environment.
+4. **Git Reset**: Performed a full Git cleanup (removing `.git`) and re-linked to the new personal repository `https://github.com/joacoastudillo71-jpg/cofinanciame_Frente_1.git`.
+
+**Consequences**:
+- ✅ Clean repository history for the new owner.
+- ✅ Correct routing on Vercel for both SPA and API.
+- ✅ Resilient static file serving on Node.js runtime.
+- ✅ Automated deployment pipeline ready.
