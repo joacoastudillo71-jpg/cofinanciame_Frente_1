@@ -1,0 +1,119 @@
+﻿node.exe : 
+En línea: 1 Carácter: 1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo 
+...
++ ~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~
+    + CategoryInfo     
+         : NotSpecifi  
+  ed: (:String) [],    
+ RemoteException
+    + FullyQualifiedEr 
+   rorId : NativeComm  
+  andError
+ 
+[1m[33mwarn[39m[22m
+ - The `content` 
+option in your 
+Tailwind CSS 
+configuration is 
+missing or empty.
+[1m[33mwarn[39m[22m
+ - Configure your 
+content sources or 
+your generated CSS 
+will be missing styles.
+[1m[33mwarn[39m[22m
+ - https://tailwindcss.
+com/docs/content-config
+uration
+[31mx[39m Build 
+failed in 392ms
+[31merror during 
+build:
+[31m[vite:css] 
+[postcss] C:/Users/joac
+o/OneDrive/Desktop/Cofi
+nanciame-v2.0/client/sr
+c/index.css:1:1: The 
+`bg-background` class 
+does not exist. If 
+`bg-background` is a 
+custom class, make 
+sure it is defined 
+within a `@layer` 
+directive.[31m
+file: [36mC:/Users/joa
+co/OneDrive/Desktop/Cof
+inanciame-v2.0/client/s
+rc/index.css:1:0[31m
+    at Input.error (C:\
+Users\joaco\OneDrive\De
+sktop\Cofinanciame-v2.0
+\client\node_modules\po
+stcss\lib\input.js:135:
+16)
+    at AtRule.error (C:
+\Users\joaco\OneDrive\D
+esktop\Cofinanciame-v2.
+0\client\node_modules\p
+ostcss\lib\node.js:146:
+32)
+    at processApply (C:
+\Users\joaco\OneDrive\D
+esktop\Cofinanciame-v2.
+0\node_modules\tailwind
+css\lib\lib\expandApply
+AtRules.js:380:29)
+    at C:\Users\joaco\O
+neDrive\Desktop\Cofinan
+ciame-v2.0\node_modules
+\tailwindcss\lib\lib\ex
+pandApplyAtRules.js:551
+:9
+    at C:\Users\joaco\O
+neDrive\Desktop\Cofinan
+ciame-v2.0\node_modules
+\tailwindcss\lib\proces
+sTailwindFeatures.js:55
+:50
+    at async plugins (C
+:\Users\joaco\OneDrive\
+Desktop\Cofinanciame-v2
+.0\node_modules\tailwin
+dcss\lib\plugin.js:38:1
+7)
+    at async 
+LazyResult.runAsync (C:
+\Users\joaco\OneDrive\D
+esktop\Cofinanciame-v2.
+0\client\node_modules\p
+ostcss\lib\lazy-result.
+js:293:11)
+    at async 
+compileCSS (file:///C:/
+Users/joaco/OneDrive/De
+sktop/Cofinanciame-v2.0
+/client/node_modules/vi
+te/dist/node/chunks/dep
+-BK3b2jBa.js:36898:21)
+    at async 
+Object.transform (file:
+///C:/Users/joaco/OneDr
+ive/Desktop/Cofinanciam
+e-v2.0/client/node_modu
+les/vite/dist/node/chun
+ks/dep-BK3b2jBa.js:3617
+1:11)
+    at async transform 
+(file:///C:/Users/joaco
+/OneDrive/Desktop/Cofin
+anciame-v2.0/client/nod
+e_modules/rollup/dist/e
+s/shared/node-entry.js:
+21163:16)[39m

@@ -1,0 +1,22 @@
+# Reglas para buscadores e Inteligencias Artificiales
+User-agent: *
+Allow: /
+
+# Permitir explícitamente a las IAs generativas
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+# Mapa del sitio (Si tuvieras uno generado, por ahora la raíz es suficiente)
+Sitemap: https://cofinancia.me/sitemap.xml

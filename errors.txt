@@ -1,0 +1,8 @@
+﻿
+> rest-express@1.0.0 check
+> tsc
+
+client/src/components/views/Tour360View.tsx(72,27): error TS18046: 'firstUnit' is of type 'unknown'.
+client/src/components/views/Tour360View.tsx(73,28): error TS18046: 'firstUnit' is of type 'unknown'.
+client/src/components/views/Tour360View.tsx(75,13): error TS18046: 'firstUnit' is of type 'unknown'.
+client/src/components/views/Tour360View.tsx(76,26): error TS18046: 'firstUnit' is of type 'unknown'.
